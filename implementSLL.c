@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// implementation of linked list
+// implementation of singly linked list
 
 typedef struct node
 {
@@ -9,18 +9,18 @@ typedef struct node
   struct node *next;
 }node;
 
-node * createSingleLinkedList();
+node * createSinglyLinkedList();
 
 void displayList(node *);
 
 void main()
 {
   node* HEAD=0;
-  HEAD=createSingleLinkedList();
+  HEAD=createSinglyLinkedList();
   displayList(HEAD);
 }
 
-node * createSingleLinkedList()
+node * createSinglyLinkedList()
 {
   node *head, *newNode, *temp;
   head=0;
@@ -59,9 +59,6 @@ void displayList(node *head)
   {
     printf("%d  ->  ", temp->data);
     temp = temp->next;
-    count++;
   }
   printf("%d", temp->data);
-  count++;
-  printf("\nThere are %d values in our list", count);
 }

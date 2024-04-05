@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// deletion in single linked list
+// deletion in singly linked list
 
 typedef struct node
 {

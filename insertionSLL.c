@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//insertion in single linked list
+//insertion in singly linked list
 
 typedef struct node
 {
